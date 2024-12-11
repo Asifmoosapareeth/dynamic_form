@@ -5,18 +5,18 @@ import '../form_model.dart';
 import '../form_service.dart';
 
 
-class SecondFormPage extends StatefulWidget {
+class DynamicFormPage extends StatefulWidget {
   @override
-  _SecondFormPageState createState() => _SecondFormPageState();
+  _DynamicFormPageState createState() => _DynamicFormPageState();
 }
 
-class _SecondFormPageState extends State<SecondFormPage> {
+class _DynamicFormPageState extends State<DynamicFormPage> {
   late Future<List<DynamicFormField>> _formFields;
 
   @override
   void initState() {
     super.initState();
-    _formFields = FormService().fetchsecondFormFields();
+    _formFields = FormService().fetchFormFields();
   }
 
 
